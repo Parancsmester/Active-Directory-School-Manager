@@ -15,6 +15,7 @@ Fő jellemzők:
 - [Támogatás](#támogatás)
 - [Active Directory telepítése és beállítása](#active-directory-telepítése-és-beállítása)
 ## Telepítés
+Windows Server 2012 R2 és korábbiakon telepíteni kell a [Windows Management Framework 5.1](https://www.microsoft.com/en-us/download/details.aspx?id=54616)-et, azon belül a *Win8.1AndW2K12R2-KB3191564-x64.msu*-t, mert ebben van 5.1-es Powershell, amiben lehet csomagokat telepíteni. Illetve be kell írni a Powershell ablakba a *[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12* parancsot.
 1. Letöltöd a repóból a szkriptet és futtatod. A szkript a [Sebazzz/PSMenu](https://github.com/Sebazzz/PSMenu) kódot használja a menü megjelenítéséhez, és azt, valamint a telepítéshez szükséges NuGet csomagkezelőt magától telepíti.
 2. A *Konfiguráció beállítása* segítségével beállítod a konfigurációt. Segítség lejjebb.
 3. A szkript alapból 7-12 évfolyamokra, és A; B; C osztályokra van beállítva, és egy D osztályra a 9. évfolyamtól. Ezek egyszerűen átállíthatóak, illetve ha a D osztályos funkcióra nincs szükség, akkor egy nagy számra állítsd át az *Global:OtherClassFrom* változóban. Állíthatod még a konfigurációs fájl nevét, és a diákok kezdőmappájának betűjelét.
