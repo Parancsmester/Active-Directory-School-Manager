@@ -13,6 +13,7 @@ Fő jellemzők:
 - [Galéria](#galéria)
 - [Hibakeresés](#hibakeresés)
 - [Támogatás](#támogatás)
+- [Active Directory telepítése és beállítása](#active-directory-telepítése-és-beállítása)
 ## Telepítés
 1. Letöltöd a repóból a szkriptet és futtatod. A szkript a [Sebazzz/PSMenu](https://github.com/Sebazzz/PSMenu) kódot használja a menü megjelenítéséhez, és azt, valamint a telepítéshez szükséges NuGet csomagkezelőt magától telepíti.
 2. A *Konfiguráció beállítása* segítségével beállítod a konfigurációt. Segítség lejjebb.
@@ -27,7 +28,6 @@ A funkciók egy menürendszeren keresztül érhetők el. Indítás után válasz
 4. Diák törlése
 5. Almenü
 6. Kilépés
-
 Az almenüben találhatóak (ezeket csak egyszer kell megcsinálni):
 1. Konfiguráció beállítása
 2. Mappák generálása
@@ -69,12 +69,18 @@ Főmenü | Almenü
 ## Hibakeresés
 A szkript csak helytelen konfiguráció és/vagy helytelen bemeneti adatok esetén ad hibát. Ellenőrizd, hogy a konfiguráció és a bemeneti adatok helyesek-e.
 ## Támogatás
-Ha bármilyen kérdésed van, nyiss egy issue-t, vagy írj emailben: [parancsmester@gmail.com](mailto:parancsmester@gmail.com?subject=Active-Directory-School-Manager).
+Ha bármilyen kérdésed van, írj a Discussionsba, vagy emailben: [parancsmester@gmail.com](mailto:parancsmester@gmail.com?subject=Active-Directory-School-Manager).
 
 ---
 
 # Active Directory telepítése és beállítása
 A szkript akkor a legjobb, ha most állítottál be egy Active Directory tartományt, de nincsenek diákok regisztrálva. Ebben szeretnék segíteni. A telepítés és beállítás során Windows Server 2022 Standard 21H2-t fogok használni.
+## Tartalomjegyzék
+ - [Windows Server telepítése](1-windows-server-telepítése)
+ - [Statikus IP cím és szervernév beállítása](2-statikus-ip-cím-és-szervernév-beállítása)
+ - [Active Directory telepítése](3-active-directory-telepítése)
+ - [Jelszóházirend beállítása](4-jelszóházirend-beállítása)
+ - [Közös megosztott mappa automatikus csatolásának beállítása](5-közös-megosztott-mappa-automatikus-csatolásának-beállítása)
 ## 1. Windows Server telepítése
 Ezen nem fogok végigmenni, azonban javaslom, hogy GUI-val telepítsd! Sokkal egyszerűbb lesz a kezelés.
 
