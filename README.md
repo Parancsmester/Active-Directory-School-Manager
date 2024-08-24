@@ -59,10 +59,39 @@ Minden menüponthoz tartozó részletes leírást alább találsz.
 - **Diákok törlése csoport alapján**: törli az összes, a megadott csoportban található diákot és mappájukat. A _*_ minden diákot töröl.
 - **Diák törlése név alapján**: törli a megadott diákot és mappáját.
 ## Galéria
-| Mappák | Csoportok | Szervezeti egységek |
-|:---:|:---:|:---:|
-| ![alt text](img/img01.PNG "Mappák") | ![alt text](img/img03.PNG "Csoportok") | ![alt text](img/img02.PNG "Szervezeti egységek") |
+Mappák | Csoportok | Szervezeti egységek
+:---:|:---:|:---:
+![alt text](img/img01.PNG "Mappák") | ![alt text](img/img03.PNG "Csoportok") | ![alt text](img/img02.PNG "Szervezeti egységek")
+
+Főmenü | Almenü
+:--:|:--:
+![alt text](img/img04.PNG "Főmenü") | ![alt text](img/img05.PNG "Almenü")
 ## Hibakeresés
 A szkript csak helytelen konfiguráció és/vagy helytelen bemeneti adatok esetén ad hibát. Ellenőrizd, hogy a konfiguráció és a bemeneti adatok helyesek-e.
 ## Támogatás
 Ha bármilyen kérdésed van, nyiss egy issue-t, vagy írj emailben: [parancsmester@gmail.com](mailto:parancsmester@gmail.com?subject=Active-Directory-School-Manager).
+# Active Directory telepítése és beállítása
+A szkript akkor a legjobb, ha most állítottál be egy Active Directory tartományt, de nincsenek diákok regisztrálva. Ebben szeretnék segíteni.
+## 1. Windows Server telepítése
+Ezen nem fogok végigmenni, azonban javaslom, hogy GUI-val telepítsd! Sokkal egyszerűbb lesz a kezelés.
+
+Telepítő ISO-t és termékkulcsot a [Tisztaszoftver](https://tisztaszoftver.hu/) oldalon lehet igényelni, de a [massgrave.dev/windows_server_links](https://massgrave.dev/windows_server_links) oldalon is lehet Windows Server 2022, 2019, 2012 R2, 2008 R2 SP1, 2008 SP2 ISO-kat letölteni, aktiválni pedig a [massgrave.dev](https://massgrave.dev/) oldalon található szkripttel lehet.
+## 2. Statikus IP cím és szervernév beállítása
+| Vezérlőpult &#8594; Hálózat és internet &#8594; Hálózati és megosztási központ &#8594; Ethernet &#8594; Tulajdonságok &#8594; A TCP/IP protokoll 4-es verziója |
+|:---:|
+| ![alt text](img/img06.PNG "Hálózati és megosztási központ") |
+| ![alt text](img/img07.PNG "Ethernet") |
+| ![alt text](img/img08.PNG "Tulajdonságok") |
+| ![alt text](img/img09.PNG "A TCP/IP protokoll 4-es verziója") |
+| Állítsd be a hálózatodnak megfelelő IP címet, alhálózati maszkot, és alapértelmezett átjárót. Az elsődleges DNS-kiszolgáló legyen *127.0.0.1*! Ugyanis ez a gép egy DNS-szerver is lesz egyben. |
+
+| Gépház &#8594; Rendszer &#8594; Névjegy &#8594; A számítógép átnevezése|
+|:---:|
+| ![alt text](img/img10.PNG "Névjegy") |
+| ![alt text](img/img11.PNG "A számítógép átnevezése") |
+| Állítsd be a szerver nevét, majd indítsd újra. |
+## 3. Active Directory telepítése
+| Kiszolgálókezelő &#8594; Kezelés &#8594; Szerepkörök és szolgáltatások hozzáadása &#8594; Tovább (3x)|
+|:--:|
+| ![alt text](img/img12.PNG "Kiszolgálói szerepkörök kiválasztása") |
+| Tovább (4x) &#8594; Telepítés |
