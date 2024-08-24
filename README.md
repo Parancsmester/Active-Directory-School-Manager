@@ -76,11 +76,11 @@ Ha bármilyen kérdésed van, írj a Discussionsba, vagy emailben: [parancsmeste
 # Active Directory telepítése és beállítása
 A szkript akkor a legjobb, ha most állítottál be egy Active Directory tartományt, de nincsenek diákok regisztrálva. Ebben szeretnék segíteni. A telepítés és beállítás során Windows Server 2022 Standard 21H2-t fogok használni.
 ## Tartalomjegyzék
- - [Windows Server telepítése](1-windows-server-telepítése)
- - [Statikus IP cím és szervernév beállítása](2-statikus-ip-cím-és-szervernév-beállítása)
- - [Active Directory telepítése](3-active-directory-telepítése)
- - [Jelszóházirend beállítása](4-jelszóházirend-beállítása)
- - [Közös megosztott mappa automatikus csatolásának beállítása](5-közös-megosztott-mappa-automatikus-csatolásának-beállítása)
+ - [Windows Server telepítése](#1-windows-server-telepítése)
+ - [Statikus IP cím és szervernév beállítása](#2-statikus-ip-cím-és-szervernév-beállítása)
+ - [Active Directory telepítése](#3-active-directory-telepítése)
+ - [Jelszóházirend beállítása](#4-jelszóházirend-beállítása)
+ - [Közös megosztott mappa automatikus csatolásának beállítása](#5-közös-megosztott-mappa-automatikus-csatolásának-beállítása)
 ## 1. Windows Server telepítése
 Ezen nem fogok végigmenni, azonban javaslom, hogy GUI-val telepítsd! Sokkal egyszerűbb lesz a kezelés.
 
