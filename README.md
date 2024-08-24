@@ -49,7 +49,7 @@ Minden menüponthoz tartozó részletes leírást alább találsz.
   - Megosztott gyökérmappa (pl. DIAKOK): az előbb tárgyalt gyökérmappa megosztott neve. Ha nem állítottad át, akkor a gyökérmappa nevét írd be.
   - Csoport: a csoport neve, amiben a diákok lesznek (pl. Diak)
   - Gyökér OU az *Active Directory: Felhasználók és számítógépek* ablakban: az a szervezeti egység (OU), ahol a diákok lesznek tárolva, akárcsak a gyökérmappában. (pl. DIAKOK) Ezt neked kell létrehozni, és kapcsold ki a Véletlen törlés elleni védelmet! Ha rögtön a domainneven belül van, akkor csak a nevét írd be. De ha pl. a VALAMI&#8594;MÁSIK&#8594;DIAKOK az "elérési út", akkor a VALAMI\MÁSIK\DIAKOK-at írd be.
-  - Alapértelmezett jelszó: az újonnan regisztrált diákok jelszava, amit az első bejelentkezéskor meg kell változtatniuk. (pl. 12345678). Ha ehhez hasonló jelszót akarsz használni, akkor meg kell változtatni a jelszóházirendet, amit ÍGY------------------------------------------------ tehetsz meg.
+  - Alapértelmezett jelszó: az újonnan regisztrált diákok jelszava, amit az első bejelentkezéskor meg kell változtatniuk. (pl. 12345678). Ha ehhez hasonló jelszót akarsz használni, akkor meg kell változtatni a jelszóházirendet, amit [ITT](#4-jelszóházirend-beállítása) tehetsz meg.
 - **Mappák generálása**: legenerálja az évfolyam- és osztálymappákat a gyökérmappában.
 - **Csoportok generálása**: minden osztálynak csinál saját csoportot, illetve egyet, amiben minden diák benne van.
 - **Szervezeti egységek (OU) generálása**: legenerálja a szervezeti egységeket, ahol a diákok lesznek évfolyamonként, azon belül pedig osztályonként.
