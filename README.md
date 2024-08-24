@@ -28,6 +28,7 @@ A funkciók egy menürendszeren keresztül érhetők el. Indítás után válasz
 4. Diák törlése
 5. Almenü
 6. Kilépés
+
 Az almenüben találhatóak (ezeket csak egyszer kell megcsinálni):
 1. Konfiguráció beállítása
 2. Mappák generálása
