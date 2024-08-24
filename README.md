@@ -119,3 +119,8 @@ Nincs szükség semmilyen logon szkriptre. Csoportházirenddel ezt is meg lehet 
 | ![alt text](img/img20.PNG "Meghajtócsatlakoztatások") |
 | Jobb klikk &#8594; Új &#8594; Csatlakoztatott meghajtó. Írd be az elérési utat, és válaszd ki a betűjelet. |
 | ![alt text](img/img21.PNG "Új meghajtó tulajdonságai") |
+| Ha szeretnéd, a Közös &#8594; Elemszintű célcsoportkezelés &#8594; Célcsoportkezelés... felületen megadhatsz feltételeket, amelyek teljesülése esetén fogja a rendszer csatlakoztatni a meghajtót.
+| ![alt text](img/img22.PNG "Célcsoportkezelés-szerkesztő") |
+| Talán a leghasznosabb a *Biztonsági csoport*, ahol beállíthatod, hogy mely csoport esetén csatlakoztassa a felhasználónak a meghajtót a rendszer.
+| ![alt text](img/img23.PNG "Célcsoportkezelés-szerkesztő") |
+| Okézz le mindent, majd a Futtatásba beírt *gpupdate /force* paranccsal mentsd el a változtatásokat. |
