@@ -70,8 +70,11 @@ Főmenü | Almenü
 A szkript csak helytelen konfiguráció és/vagy helytelen bemeneti adatok esetén ad hibát. Ellenőrizd, hogy a konfiguráció és a bemeneti adatok helyesek-e.
 ## Támogatás
 Ha bármilyen kérdésed van, nyiss egy issue-t, vagy írj emailben: [parancsmester@gmail.com](mailto:parancsmester@gmail.com?subject=Active-Directory-School-Manager).
+
+---
+
 # Active Directory telepítése és beállítása
-A szkript akkor a legjobb, ha most állítottál be egy Active Directory tartományt, de nincsenek diákok regisztrálva. Ebben szeretnék segíteni.
+A szkript akkor a legjobb, ha most állítottál be egy Active Directory tartományt, de nincsenek diákok regisztrálva. Ebben szeretnék segíteni. A telepítés és beállítás során Windows Server 2022 Standard 21H2-t fogok használni.
 ## 1. Windows Server telepítése
 Ezen nem fogok végigmenni, azonban javaslom, hogy GUI-val telepítsd! Sokkal egyszerűbb lesz a kezelés.
 
@@ -94,4 +97,25 @@ Telepítő ISO-t és termékkulcsot a [Tisztaszoftver](https://tisztaszoftver.hu
 | Kiszolgálókezelő &#8594; Kezelés &#8594; Szerepkörök és szolgáltatások hozzáadása &#8594; Tovább (3x)|
 |:--:|
 | ![alt text](img/img12.PNG "Kiszolgálói szerepkörök kiválasztása") |
-| Tovább (4x) &#8594; Telepítés |
+| Tovább (4x) &#8594; Telepítés &#8594; Bezárás &#8594; Értesítések (zászló ikon) &#8594; A számítógép előléptetése tartományvezérlővé|
+| ![alt text](img/img13.PNG "Központi telepítés konfigurálása") |
+| Írd be a domainnevet. |
+| ![alt text](img/img14.PNG "Tartományvezérlő beállításai") |
+| Írj be egy jelszót. Egyszerűség kedvéért beírhatod a rendszergazda jelszavát. &#8594; Tovább (5x) &#8594; Telepítés |
+## 4. Jelszóházirend beállítása
+| Kiszolgálókezelő &#8594; Eszközök &#8594; Csoportházirend kezelése &#8594; Erdő: &lt;domain&gt; &#8594; Tartományok &#8594; &lt;domain&gt; &#8594; Default Domain Policy &#8594; jobb klikk &#8594; Szerkesztés |
+|:---:|
+| ![alt text](img/img15.PNG "Csoportházirend kezelése") |
+| Házirend: Default Domain Policy &#8594; Számítógép konfigurációja &#8594; Házirendek &#8594; A Windows beállításai &#8594; Biztonsági beállítások &#8594; Fiókházirend &#8594; Jelszóházirend |
+| ![alt text](img/img16.PNG "Jelszóházirend") ![alt text](img/img17.PNG "Jelszóházirend") |
+| Állítsd be a neked megfelelő jelszóházirendet. Mentsük el a változtatásokat a *gpupdate /force* paranccsal, amit a Futtatásba írunk be. (Win+R) |
+| ![alt text](img/img18.PNG "Futtatás") |
+## 5. Közös megosztott mappa automatikus csatolásának beállítása
+Nincs szükség semmilyen logon szkriptre. Csoportházirenddel ezt is meg lehet csinálni.
+| Házirend: Default Domain Policy &#8594; Felhasználó konfigurációja &#8594; Beállítások &#8594; A Windows beállításai &#8594; Meghajtócsatlakoztatások |
+|:---:|
+| ![alt text](img/img19.PNG "Meghajtócsatlakoztatások") |
+| A remek Windows XP téma... úgy tűnik, azóta nem nyúltak ehhez. |
+| ![alt text](img/img20.PNG "Meghajtócsatlakoztatások") |
+| Jobb klikk &#8594; Új &#8594; Csatlakoztatott meghajtó. Írd be az elérési utat, és válaszd ki a betűjelet. |
+| ![alt text](img/img21.PNG "Új meghajtó tulajdonságai") |
