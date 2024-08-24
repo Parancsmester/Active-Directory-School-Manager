@@ -59,9 +59,9 @@ Minden menüponthoz tartozó részletes leírást alább találsz.
 - **Diákok törlése csoport alapján**: törli az összes, a megadott csoportban található diákot és mappájukat. A _*_ minden diákot töröl.
 - **Diák törlése név alapján**: törli a megadott diákot és mappáját.
 ## Galéria
-| Mappák | Are | Szervezeti egységek |
+| Mappák | Csoportok | Szervezeti egységek |
 |:---:|:---:|:---:|
-| ![alt text](img/img01.PNG "Mappák") | right-aligned | ![alt text](img/img02.PNG "Szervezeti egységek") |
+| ![alt text](img/img01.PNG "Mappák") | ![alt text](img/img03.PNG "Csoportok") | ![alt text](img/img02.PNG "Szervezeti egységek") |
 ## Hibakeresés
 A szkript csak helytelen konfiguráció és/vagy helytelen bemeneti adatok esetén ad hibát. Ellenőrizd, hogy a konfiguráció és a bemeneti adatok helyesek-e.
 ## Támogatás
